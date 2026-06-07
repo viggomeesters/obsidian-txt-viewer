@@ -1,0 +1,2 @@
+Fryske tekst mei aksinten: hearlik, moai, grutsk.
+Emoji-like symbols are avoided in UI, but Unicode content should still render: café, naïve, über.

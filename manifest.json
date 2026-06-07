@@ -1,0 +1,10 @@
+{
+  "id": "txt-viewer",
+  "name": "TXT Viewer",
+  "version": "0.1.0",
+  "minAppVersion": "1.5.0",
+  "description": "Open .txt files as read-only text with line numbers, search navigation, filtering, and large-file guards.",
+  "author": "Viggo Meesters",
+  "authorUrl": "https://github.com/viggomeesters",
+  "isDesktopOnly": false
+}

@@ -1,0 +1,2 @@
+This is a deliberately long line for soft wrap testing. It contains enough repeated text to make a narrow pane wrap naturally while still preserving the original line number and search behavior inside the viewer surface.
+short line
