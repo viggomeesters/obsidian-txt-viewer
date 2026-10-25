@@ -46,11 +46,9 @@ Plain text looks simple, but editing still creates risk around encodings, line e
 
 ### Community plugin directory
 
-TXT Viewer is prepared for Community plugin directory submission. Once accepted, it can be installed from **Settings -> Community plugins -> Browse**.
+Install from the [Obsidian Community directory](https://community.obsidian.md/plugins/txt-viewer) or search for TXT Viewer in Settings → Community plugins → Browse.
 
 ### Manual installation
-
-Until the community directory submission is accepted:
 
 1. Download `main.js`, `manifest.json`, and `styles.css` from the [latest release](https://github.com/viggomeesters/obsidian-txt-viewer/releases/latest).
 2. Create this folder in your vault: `.obsidian/plugins/txt-viewer/`.
@@ -100,29 +98,9 @@ Community plugin files are installed from GitHub releases. For each release:
 
 The repository includes a GitHub Actions release workflow with artifact attestation support. If GitHub Actions is disabled for the owner account, manual releases are still usable, but automated review may show a recommendation about missing artifact attestations.
 
-## Community directory submission
+## Community directory
 
-The repository is prepared for Community plugin submission. The remaining submission step must be completed by the repository owner because it requires signing in, linking GitHub, and confirming the developer policies/support commitment.
-
-Submit this repository URL:
-
-```text
-https://github.com/viggomeesters/obsidian-txt-viewer
-```
-
-Steps:
-
-1. Sign in to [community.obsidian.md](https://community.obsidian.md).
-2. Link the GitHub account that owns this repository.
-3. Open **Plugins -> New plugin**.
-4. Enter the repository URL above.
-5. Confirm the developer policies and submit.
-6. Address any automated review feedback.
-
-Official references:
-
-- [Submit your plugin](https://docs.obsidian.md/Plugins/Releasing/Submit%20your%20plugin)
-- [Obsidian releases repository](https://github.com/obsidianmd/obsidian-releases)
+TXT Viewer is listed in the [Obsidian Community directory](https://community.obsidian.md/plugins/txt-viewer).
 
 ## License
 

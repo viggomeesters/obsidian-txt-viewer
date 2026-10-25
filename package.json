@@ -1,10 +1,10 @@
 {
   "name": "obsidian-txt-viewer",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Read-only TXT viewer plugin with line numbers, search navigation, filtering, and large-file guards.",
   "main": "main.js",
   "scripts": {
-    "build": "NODE_ENV=production node esbuild.config.mjs",
+    "build": "node esbuild.config.mjs production",
     "dev": "node esbuild.config.mjs",
     "test": "node scripts/text-test.mjs && node scripts/smoke-test.mjs",
     "typecheck": "tsc --noEmit"

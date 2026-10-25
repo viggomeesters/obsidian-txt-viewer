@@ -1,13 +1,15 @@
 import fs from "node:fs";
 
 const manifest = JSON.parse(fs.readFileSync("manifest.json", "utf8"));
+const releasePackage = JSON.parse(fs.readFileSync("package.json", "utf8"));
+const releaseVersions = JSON.parse(fs.readFileSync("versions.json", "utf8"));
 const main = fs.readFileSync("src/main.ts", "utf8");
 const text = fs.readFileSync("src/text.ts", "utf8");
 const styles = fs.readFileSync("styles.css", "utf8");
 
 const assertions = [
   [manifest.id === "txt-viewer", "manifest id is txt-viewer"],
-  [manifest.version === "0.1.0", "manifest version is 0.1.0"],
+  [manifest.version === releasePackage.version && /^\d+\.\d+\.\d+$/.test(manifest.version) && releaseVersions[manifest.version] === manifest.minAppVersion, "release version matches package and supported app version"],
   [!/obsidian/i.test(manifest.description), "manifest description avoids product name"],
   [main.includes("registerExtensions(TXT_EXTENSIONS"), "txt extension is registered"],
   [main.includes("type ViewMode = \"text\" | \"filtered\""), "text/filter modes exist"],

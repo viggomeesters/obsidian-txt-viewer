@@ -238,7 +238,7 @@ class TxtViewerView extends TextFileView {
       renderLineText(code, line.text, rangeMap.get(line.number) ?? []);
 
       if (isActive) {
-        requestAnimationFrame(() => {
+        this.contentEl.win.requestAnimationFrame(() => {
           lineEl.scrollIntoView({ block: "center" });
         });
       }
